@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <com.droid.tv.recommendapp.DualTextHeader
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:subTitleText="SubTitle"
+        app:titleText="Title: List of App">
+
+    </com.droid.tv.recommendapp.DualTextHeader>
+
+    <ListView
+        android:id="@+id/installed_app_list"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="@android:color/darker_gray"
+        android:listSelector="@android:color/background_light"
+        android:scrollbars="none" />
+
+</RelativeLayout>
